@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwuEats - Classic Chicken Adobo</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Standardized Header -->
+    <header class="home-header">
+        <div class="brand"><a href="index.html" style="text-decoration: none; color: inherit;">SwuEats</a></div>
+        <nav class="home-nav-links">
+            <a href="index.html">Home</a>
+            <a href="#main-footer">About</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="categories.html">Categories</a>
+        </nav>
+    </header>
+
+    <!-- Main Detail Section -->
+    <div class="nav-page-wrapper view-section">
+        <div class="detail-page">
+            <div class="detail-header">
+                <!-- Back button links to the Recipes page -->
+                <button class="back-btn" onclick="window.location.href='recipes.html'" aria-label="Go Back">
+                    <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+                </button>
+                <div class="detail-header-search">
+                    <svg width="20" height="20" fill="#999" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 14z"/></svg>
+                    <input type="text" placeholder="Search another recipe...">
+                </div>
+            </div>
+
+            <div class="detail-content">
+                <!-- Left Column -->
+                <div class="detail-left">
+                    <h1>Pancit</h1>
+                    <img class="detail-image" src="https://theunlikelybaker.com/wp-content/uploads/2025/12/1-Filipino-Pancit-Canton.jpg" alt="Pancit>
+                    <p class="detail-desc">Gemini said
+Pancit Canton is a classic Filipino stir-fried noodle dish made with thick egg noodles, a variety of sliced meats, and crisp vegetables. Often served at birthdays to symbolize "long life," it is a savory, colorful meal that balances salty soy sauce with a touch of citrus.</p>
+                    
+                    <div class="ingredients-list">
+                        <h3>Ingredients:</h3>
+                        <ul>
+                            <li>500g Pancit Canton (dried egg noodles)</li>
+                            <li>250g Pork or chicken, thinly sliced</li>
+                            <li>100g Shrimp, peeled and deveined</li>
+                            <li>2 cups Cabbage, shredded</li>
+                            <li>1 cup Carrots, julienned</li>
+                            <li>1 cup Snap peas (sitsaro)</li>
+                            <li>1/4 cup Soy sauce</li>
+                            <li>2 tbsp Oyster sauce</li>
+                            <li>4 cups Chicken broth or water</li>
+                            <li>1 Onion, chopped</li>
+                            <li>4 cloves Garlic, minced</li>
+                            <li>Salt and pepper to taste</li>
+                            <li>Calamansi for serving</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="detail-right">
+                    <h2>Step by Step Guide</h2>
+                    <ol class="steps-list">
+                        <li>In a large pan or wok, sauté the garlic and onions in a bit of oil until fragrant.</li>
+                        <li>Add the pork or chicken and cook until browned, then stir in the shrimp until they turn pink.</li>
+                        <li>Add the carrots and snap peas, stir-frying for 2 minutes before removing them from the pan to keep them crisp.</li>
+                        <li>Pour the chicken broth, soy sauce, and oyster sauce into the pan. Bring to a boil.</li>
+                        <li>Add the dried egg noodles and let them soak up the liquid while tossing gently until softened.</li>
+                        <li>Once the liquid has mostly evaporated, return the cooked meat and vegetables (including the cabbage) to the pan.</li>
+                        <li>Season with salt and pepper, then toss everything together until well-combined and the cabbage is slightly wilted.</li>
+                        <li>Serve hot with calamansi on the side to squeeze over the noodles for a bright, acidic finish.</li>
+                    </ol>
+
+                    <!-- Foolproof Video Thumbnail Link -->
+                    <div style="position: relative; margin-top: 2rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); background-color: #000;">
+                        <a href="https://www.youtube.com/watch?v=6-b6h_LoJyg&pp=ygUUcGFuY2l0IGNhbnRvbiByZWNpcGU%3D" target="_blank" rel="noopener noreferrer" style="display: block; position: relative; text-decoration: none;">
+                            <!-- Fetches the actual YouTube thumbnail for the video -->
+                            <img src="https://img.youtube.com/vi/6-b6h_LoJyg/sddefault.jpg" alt="Watch Pancit Video Tutorial" style="width: 100%; display: block; opacity: 0.85;">
+                            
+                            <!-- Play Button Overlay -->
+                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 68px; height: 48px; background-color: rgba(255, 0, 0, 0.9); border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </a>
+                    </div>
+                    <p style="text-align: center; font-size: 0.85rem; margin-top: 0.75rem; color: #666;">
+                        <em>Click the image to watch the tutorial directly on YouTube.</em>
+                    </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Corrected Footer -->
+    <footer id="main-footer" class="home-footer">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand">SwuEats</div>
+                <p class="footer-desc">Discover delicious recipes and culinary inspiration for every occasion.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#main-footer">About</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Email: info@swueats.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 SwuEats. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Link to your external JS file -->
+    <script src="script.js"></script>
+</body>
+</html>

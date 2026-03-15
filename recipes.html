@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwuEats - Recipes</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Standardized Header -->
+    <header class="home-header">
+        <div class="brand"><a href="index.html" style="text-decoration: none; color: inherit;">SwuEats</a></div>
+        <nav class="home-nav-links">
+            <a href="index.html">Home</a>
+            <a href="#main-footer">About</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="categories.html">Categories</a>
+        </nav>
+    </header>
+
+    <!-- Main Recipes Section -->
+    <div class="nav-page-wrapper view-section">
+        <div class="nav-page-container">
+            <!-- Header Text -->
+            <div class="nav-header-section">
+                <h2>Mga Lutong Bahay</h2>
+                <p>Explore our collection of authentic Filipino recipes. The costs shown represent the estimated price of ingredients to prepare these dishes at home, not restaurant selling prices.</p>
+            </div>
+
+            <div class="nav-content-flex">
+                <!-- Sidebar Categories -->
+                <aside class="nav-sidebar">
+                    <h3>Categories</h3>
+                    <ul class="category-list">
+                        <li class="category-item active" onclick="filterCategory(this, 'All Recipes')">
+                            <span class="cat-icon">🍽️</span>
+                            <span class="cat-name">All Recipes</span>
+                            <span class="cat-count">15</span>
+                        </li>
+                        <li class="category-item" onclick="filterCategory(this, 'Ulam')">
+                            <span class="cat-icon">🥘</span>
+                            <span class="cat-name">Ulam</span>
+                            <span class="cat-count">4</span>
+                        </li>
+                        <li class="category-item" onclick="filterCategory(this, 'Sabaw')">
+                            <span class="cat-icon">🥣</span>
+                            <span class="cat-name">Sabaw</span>
+                            <span class="cat-count">3</span>
+                        </li>
+                        <li class="category-item" onclick="filterCategory(this, 'Lutuin')">
+                            <span class="cat-icon">🍳</span>
+                            <span class="cat-name">Lutuin</span>
+                            <span class="cat-count">2</span>
+                        </li>
+                        <li class="category-item" onclick="filterCategory(this, 'Desserts')">
+                            <span class="cat-icon">🍮</span>
+                            <span class="cat-name">Desserts</span>
+                            <span class="cat-count">3</span>
+                        </li>
+                        <li class="category-item" onclick="filterCategory(this, 'Appetizers')">
+                            <span class="cat-icon">🥟</span>
+                            <span class="cat-name">Appetizers</span>
+                            <span class="cat-count">2</span>
+                        </li>
+                        <li class="category-item" onclick="filterCategory(this, 'Beverages')">
+                            <span class="cat-icon">🍹</span>
+                            <span class="cat-name">Beverages</span>
+                            <span class="cat-count">1</span>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!-- Main Recipe Area -->
+                <main class="nav-main-area">
+                    <!-- Search Bar -->
+                    <div class="nav-search-bar">
+                        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 14z"/></svg>
+                        <input type="text" placeholder="Search recipes...">
+                    </div>
+
+                    <!-- Recipe Cards Grid -->
+                    <div class="nav-grid">
+                        
+                        <div class="nav-card" onclick="window.location.href='adobo.html'">
+                            <img src="https://www.butterbeready.com/wp-content/uploads/2021/10/DK6A1906-680x1020.jpg" alt="Classic Chicken Adobo">
+                            <div class="nav-card-body">
+                                <h4>Classic Chicken Adobo</h4>
+                                <div class="cost-label">COST TO MAKE AT HOME</div>
+                                <div class="price">₱150</div>
+                                <div class="category">Ulam</div>
+                            </div>
+                        </div>
+
+                        <div class="nav-card" onclick="window.location.href='sinigang.html'">
+                            <img src="https://asianinspirations.com.au/wp-content/uploads/2022/07/R02988-Pork-Sinigang-619x412.jpg" alt="Pork Sinigang">
+                            <div class="nav-card-body">
+                                <h4>Pork Sinigang</h4>
+                                <div class="cost-label">COST TO MAKE AT HOME</div>
+                                <div class="price">₱250</div>
+                                <div class="category">Sabaw</div>
+                            </div>
+                        </div>
+
+                        <div class="nav-card" onclick="window.location.href='karekare.html'">
+                            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_728,h_546/k%2FPhoto%2FRecipes%2F2024-09-kare-kare%2Fkare-kare-3458" alt="Beef Kare-Kare">
+                            <div class="nav-card-body">
+                                <h4>Beef Kare-Kare</h4>
+                                <div class="cost-label">COST TO MAKE AT HOME</div>
+                                <div class="price">₱350</div>
+                                <div class="category">Ulam</div>
+                            </div>
+                        </div>
+
+                        <div class="nav-card" onclick="window.location.href='LecheFlan.html'">
+                            <img src="https://bitesbybianca.com/wp-content/uploads/2024/12/filipino-leche-flan-1.jpg" alt="Leche Flan">
+                            <div class="nav-card-body">
+                                <h4>Leche Flan</h4>
+                                <div class="cost-label">COST TO MAKE AT HOME</div>
+                                <div class="price">₱120</div>
+                                <div class="category">Desserts</div>
+                            </div>
+                        </div>
+
+                        <div class="nav-card" onclick="window.location.href='gulaman.html'">
+                            <img src="https://thegridfoodmarket.com/cdn/shop/products/Sago_tGulaman_700x.jpg?v=1629990481" alt="Sago't Gulaman">
+                            <div class="nav-card-body">
+                                <h4>Sago't Gulaman</h4>
+                                <div class="cost-label">COST TO MAKE AT HOME</div>
+                                <div class="price">₱80</div>
+                                <div class="category">Beverages</div>
+                            </div>
+                        </div>
+
+                        <div class="nav-card" onclick="window.location.href='lumpia.html'">
+                            <img src="https://www.billyparisi.com/wp-content/uploads/2025/06/lumpia-2.jpg" alt="Lumpiang Shanghai">
+                            <div class="nav-card-body">
+                                <h4>Lumpiang Shanghai</h4>
+                                <div class="cost-label">COST TO MAKE AT HOME</div>
+                                <div class="price">₱180</div>
+                                <div class="category">Appetizers</div>
+                            </div>
+                        </div>
+
+                        <div class="nav-card" onclick="window.location.href='canton.html'">
+                            <img src="https://theunlikelybaker.com/wp-content/uploads/2025/12/1-Filipino-Pancit-Canton.jpg" alt="Pancit Canton">
+                            <div class="nav-card-body">
+                                <h4>Pancit</h4>
+                                <div class="cost-label">COST TO MAKE AT HOME</div>
+                                <div class="price">₱160</div>
+                                <div class="category">Lutuin</div>
+                            </div>
+                        </div>
+
+                        <div class="nav-card" onclick="window.location.href='tinola.html'">
+                            <img src="https://cdn.shortpixel.ai/spai2/q_glossy+w_617+to_auto+ret_img/www.hungryhuy.com/wp-content/uploads/chicken-tinola-bowl.jpg" alt="Chicken Tinola">
+                            <div class="nav-card-body">
+                                <h4>Chicken Tinola</h4>
+                                <div class="cost-label">COST TO MAKE AT HOME</div>
+                                <div class="price">₱190</div>
+                                <div class="category">Sabaw</div>
+                            </div>
+                        </div>
+
+                        <div class="nav-card" onclick="window.location.href='tapa.html'">
+                            <img src="https://www.nestlegoodnes.com/ph/sites/default/files/styles/1_1_768px_width/public/srh_recipes/b807d01e43152f9312051691ae1d6cd8.jpg.webp?itok=Rzm0QaT4" alt="Beef Tapa">
+                            <div class="nav-card-body">
+                                <h4>Beef Tapa</h4>
+                                <div class="cost-label">COST TO MAKE AT HOME</div>
+                                <div class="price">₱280</div>
+                                <div class="category">Lutuin</div>
+                            </div>
+                        </div>
+
+                        <div class="nav-card" onclick="window.location.href='sisig.html'">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Authentic_Kapampangan_Sisig.jpg/250px-Authentic_Kapampangan_Sisig.jpg" alt="Pork Sisig">
+                            <div class="nav-card-body">
+                                <h4>Pork Sisig</h4>
+                                <div class="cost-label">COST TO MAKE AT HOME</div>
+                                <div class="price">₱220</div>
+                                <div class="category">Appetizers</div>
+                            </div>
+                        </div>
+
+                        <div class="nav-card" onclick="window.location.href='halohalo.html'">
+                            <img src="https://www.foodandwine.com/thmb/NQ9Na7njJN4W5MtXN7ntOCnK4k4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/halo-halo-FT-RECIPE0924-28931a658de3439d9719f83d5a6dfc2c.jpeg" alt="Halo-Halo">
+                            <div class="nav-card-body">
+                                <h4>Halo-Halo</h4>
+                                <div class="cost-label">COST TO MAKE AT HOME</div>
+                                <div class="price">₱150</div>
+                                <div class="category">Desserts</div>
+                            </div>
+                        </div>
+
+                        <div class="nav-card" onclick="window.location.href='bicol.html'">
+                            <img src="https://panlasangpinoy.com/wp-content/uploads/2021/04/Bicol-Express-1.jpg" alt="Bicol Express">
+                            <div class="nav-card-body">
+                                <h4>Bicol Express</h4>
+                                <div class="cost-label">COST TO MAKE AT HOME</div>
+                                <div class="price">₱210</div>
+                                <div class="category">Ulam</div>
+                            </div>
+                        </div>
+
+                        <div class="nav-card" onclick="window.location.href='hipon.html'">
+                            <img src="https://assets.unileversolutions.com/recipes-v3/214403-default.jpg?im=AspectCrop=(718,401);Resize=(718,401)" alt="Sinigang na Hipon">
+                            <div class="nav-card-body">
+                                <h4>Sinigang na Hipon</h4>
+                                <div class="cost-label">COST TO MAKE AT HOME</div>
+                                <div class="price">₱320</div>
+                                <div class="category">Sabaw</div>
+                            </div>
+                        </div>
+
+                        <div class="nav-card" onclick="window.location.href='pinakbet.html'">
+                            <img src="https://deliciouslyrushed.com/wp-content/uploads/2024/11/Pinakbet-5.jpg" alt="Pinakbet">
+                            <div class="nav-card-body">
+                                <h4>Pinakbet</h4>
+                                <div class="cost-label">COST TO MAKE AT HOME</div>
+                                <div class="price">₱140</div>
+                                <div class="category">Ulam</div>
+                            </div>
+                        </div>
+
+                        <div class="nav-card" onclick="window.location.href='buko.html'">
+                            <img src="https://cinnamonsnail.com/wp-content/uploads/2024/05/Buko-Pandan-04.jpg" alt="Buko Pandan">
+                            <div class="nav-card-body">
+                                <h4>Buko Pandan</h4>
+                                <div class="cost-label">COST TO MAKE AT HOME</div>
+                                <div class="price">₱130</div>
+                                <div class="category">Desserts</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Corrected Footer -->
+    <footer id="main-footer" class="home-footer">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand">SwuEats</div>
+                <p class="footer-desc">Discover delicious recipes and culinary inspiration for every occasion.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#main-footer">About</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:josh.bote.swu@phinmaed.com"> info@swueats.com</a></p><br>
+                <p>Phone:<a href="tel:09930239087"> (555) 123-4567</a></p><br>
+                <p>Address: <a href="https://www.google.com/maps/search/Southwestern+University+PHINMA+Cebu" target="_blank">
+        Urgello St., Cebu City, Philippines
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 SwuEats. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Link to your external JS file -->
+    <script src="script.js"></script>
+</body>
+</html>

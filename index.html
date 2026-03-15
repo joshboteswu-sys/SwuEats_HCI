@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwuEats - Authentic Filipino Recipes</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="home-wrapper">
+        <!-- Standardized Header -->
+        <header class="home-header">
+            <div class="brand"><a href="index.html" style="text-decoration: none; color: inherit;">SwuEats</a></div>
+            <nav class="home-nav-links">
+                <a href="index.html">Home</a>
+                <a href="#main-footer">About</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="categories.html">Categories</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>SwuEats</h1>
+                <h2>"Ang pagkain ay puso ng pamilya."</h2>
+                <p>Discover the heart of Filipino culture through our authentic, home-cooked recipes.</p>
+                <button class="hero-btn" onclick="window.location.href='recipes.html'">
+                    Explore Recipes <span>&rarr;</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Popular Recipes Section -->
+        <section class="popular-section">
+            <h3>Most Popular Recipes</h3>
+            <div class="popular-grid">
+                <!-- Card 1 -->
+                <div class="popular-card" onclick="window.location.href='adobo.html'">
+                    <img src="https://www.butterbeready.com/wp-content/uploads/2021/10/DK6A1906-680x1020.jpg" alt="Classic Chicken Adobo">
+                    <div class="popular-card-body">
+                        <h4>Classic Chicken Adobo</h4>
+                        <div class="cost-label">Cost to Make at Home:</div>
+                        <div class="price">₱150</div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="popular-card" onclick="window.location.href='sinigang.html'">
+                    <img src="https://asianinspirations.com.au/wp-content/uploads/2022/07/R02988-Pork-Sinigang-619x412.jpg" alt="Pork Sinigang">
+                    <div class="popular-card-body">
+                        <h4>Pork Sinigang</h4>
+                        <div class="cost-label">Cost to Make at Home:</div>
+                        <div class="price">₱250</div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="popular-card" onclick="window.location.href='karekare.html'">
+                    <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_728,h_546/k%2FPhoto%2FRecipes%2F2024-09-kare-kare%2Fkare-kare-3458" alt="Beef Kare-Kare">
+                    <div class="popular-card-body">
+                        <h4>Beef Kare-Kare</h4>
+                        <div class="cost-label">Cost to Make at Home:</div>
+                        <div class="price">₱350</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Corrected Footer -->
+        <footer id="main-footer" class="home-footer">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">SwuEats</div>
+                    <p class="footer-desc">Discover delicious recipes and culinary inspiration for every occasion.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#main-footer">About</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Email: info@swueats.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 SwuEats. All rights reserved.
+            </div>
+        </footer>
+    </div>
+
+    <!-- Link to your external JS file -->
+    <script src="script.js"></script>
+</body>
+</html>
